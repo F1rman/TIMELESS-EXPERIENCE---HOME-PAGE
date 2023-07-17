@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+    />
+
+    <!-- Website Status Bar Background-Color for Safari/iOS -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="supported-color-schemes" content="#0d1e30" />
+    <!-- Website Status Bar Background-Color for Chrome, Firefox OS & Opera -->
+    <meta name="theme-color" content="#0d1e30" />
+    <!-- Website Status Bar Background-Color for Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0d1e30" />
+
+    <title>TIMELESS EXPERIENCE</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="icon" type="image/jpg" href="images/logo.svg" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
+    <link
+      href="fonts/site-fonts/fontstyle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link href="css/aos.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target="#spy">
+    <div class="home_page_wrapper">
+      <header>
+        <div class="main_menubar_con active">
+          <div class="main_menubar_navWrapper container">
+            <a href="index.html" id="logo"></a>
+            <div class="main_menubar_list_items">
+              <a href="landlord.html">Landlords</a>
+              <a href="business.html">Business</a>
+            </div>
+            <div class="main_menubar_hamburger">
+              <div id="main_menubar_nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="main_menubar_overlay container">
+                <div class="container main_menubar_overlayContent">
+                  <a href="#!" id="logo_on_dropdown"></a>
+                  <div>
+                    <span class="hidden-xs">
+                      <a href="travelers.html">Travelers</a>
+                      <a href="investors.html">Investors</a>
+                      <a href="blog">Blog</a>
+                    </span>
+                    <span class="visible-xs first_nav_section-xs">
+                      <a href="landlord.html">Landlords</a>
+                      <a href="business.html">Business</a>
+                      <a href="travelers.html">Travelers</a>
+                      <a href="investors.html">Investors</a>
+                    </span>
+                  </div>
+                  <div class="second_nav_section-xs">
+                    <a href="about-us.html">About</a>
+                    <a href="faqs.html">FAQs</a>
+                    <a href="contact-us.html">Contacts</a>
+                  </div>
+                  <div>
+                    <p>© 2023 All Rights Reserved</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div class="hero_img">
+          <div class="ready_to_partn_con">
+            <h4>
+              Ready to partner with Timeless Experience?
+              <a href="#!">Let’s talk.</a>
+            </h4>
+          </div>
+          <div class="hero_img_inner container">
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="1300"
+              data-aos-easing="linear"
+              data-aos-once="true"
+            >
+              Find your home
+            </h2>
+            <h3
+              data-aos="fade-up"
+              data-aos-duration="1300"
+              data-aos-easing="linear"
+              data-aos-once="true"
+            >
+              Experience the timeless difference.
+            </h3>
+            <a href="contact-us.html"
+              ><button
+                type="button"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="linear"
+                data-aos-once="true"
+              >
+                Learn more
+              </button></a
+            >
+          </div>
+          <div class="full-window-height video-bg">
+            <div class="video_sec text-center">
+              <video
+                playsinline
+                preload="auto"
+                onloadstart="this.playbackRate = .5;"
+                autoplay="true"
+                muted="true"
+                loop="true"
+                poster=""
+                type="video/mp4"
+              >
+                <source src="images/hero-video.mp4" type="video/mp4" />
+                <source src="images/hero-video.webm" type="video/webm" />
+                <source src="images/hero-video.ogg" type="video/ogg" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="top_guests_main_con">
+          <div class="container top_guests_con">
+            <h2 class="hero-text">Top guests and travelers</h2>
+            <div
+              class="top_guests_main_con we_combined_the_main_con text-center"
+            >
+              <div class="gallery">
+                <span>
+                  <img src="images/top-guests-google-icon.svg" />
+                </span>
+                <span>
+                  <img src="images/top-guests-slack-icon.svg" />
+                </span>
+                <span>
+                  <img src="images/top-guests-cornerstone-icon.svg" />
+                </span>
+                <span>
+                  <img src="images/top-guests-yahoo-icon.svg" />
+                </span>
+                <span class="de" style="top: -8px;">
+                  <img src="images/top-guests-accenture-icon.svg" />
+                </span>
+              </div>
+            </div>
+            <div class="top_guests_living_redefined_con">
+              <div
+                class="col-lg-6 col-md-6 col-sm-6 col-xs-12 top_guests_livi_redefin_img_con"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="300"
+                data-aos-once="true"
+              >
+                <div
+                  class="top_guests_livi_redefin_img_inner_con"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="300"
+                  data-aos-once="true"
+                ></div>
+                <img src="images/top-guests-img-name.png" />
+              </div>
+              <div
+                class="col-lg-6 col-md-6 col-sm-6 col-xs-12 top_guests_livi_redefin_text_con"
+              >
+                <h3
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  data-aos-easing="linear"
+                  data-aos-once="true"
+                >
+                  Living, redefined
+                </h3>
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  data-aos-easing="linear"
+                  data-aos-once="true"
+                >
+                  Experience home like never before, With fast Wi-Fi, adaptable
+                  workspaces, smart entertainment, fully equipped kitchens, and
+                  access to gym and pools <br />in select properties.
+                </h4>
+                <a href="contact-us.html"
+                  >Learn more<img src="images/top-guests-arrow-up-icon.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="home_simplified_main_con">
+          <div class="container home_simplified_con">
+            <h2>Home, simplified</h2>
+            <h3>
+              Our cozy stays are designed for travelers embarking on their next
+              work gig, experiencing wanderlust, or anything in between.
+            </h3>
+            <div class="rest_sanct_main_con">
+              <div
+                class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container rest_sanct_sub_con1"
+              >
+                <div>
+                  <h2>Restful sanctuary</h2>
+                  <h3>
+                    Every home is outfitted from top to bottom by a professional
+                    interior designer
+                  </h3>
+                  <a href="contact-us.html"
+                    >Learn more<img src="images/top-guests-arrow-up-icon.svg" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container rest_sanct_sub_con2 top_guests_livi_redefin_img_con"
+              >
+                <div class="top_guests_livi_redefin_img_inner_con"></div>
+              </div>
+            </div>
+            <div class="smart_comf_main_con">
+              <div
+                class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container smart_comf_sub_con1 top_guests_livi_redefin_img_con"
+              >
+                <div class="top_guests_livi_redefin_img_inner_con"></div>
+              </div>
+              <div
+                class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container smart_comf_sub_con2"
+              >
+                <div>
+                  <h2>Smart comfort</h2>
+                  <h3>
+                    Each space features high-speed Wi-Fi, work upgrade options,
+                    smart home entertainment
+                  </h3>
+                  <a href="contact-us.html"
+                    >Learn more<img src="images/top-guests-arrow-up-icon.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="work_gour_main_con">
+              <div
+                class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container work_gour_sub_con1 top_guests_livi_redefin_img_con"
+              >
+                <span><h2>Workspace solutions</h2></span>
+                <div class="top_guests_livi_redefin_img_inner_con"></div>
+              </div>
+              <div
+                class="col-lg-6 col-md-6 col-sm-6 col-xs-12 work_gour_sub_con2 top_guests_livi_redefin_img_con"
+              >
+                <div class="top_guests_livi_redefin_img_inner_con"></div>
+                <span><h2>Gourmet kitchen</h2></span>
+              </div>
+            </div>
+            <div class="partner_we_are_main_con">
+              <div
+                class="col-lg-5 col-md-5 col-sm-6 col-xs-12 container partner_we_are_sub_con1"
+              >
+                <div>
+                  <h2>Partnership</h2>
+                  <h3>
+                    We’re committed to fostering strong relationships with
+                    property owners
+                  </h3>
+                  <a href="contact-us.html"
+                    >Learn more<img src="images/top-guests-arrow-up-icon.svg" />
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-lg-7 col-md-7 col-sm-6 col-xs-12 partner_we_are_sub_con2 top_guests_livi_redefin_img_con"
+              >
+                <div class="top_guests_livi_redefin_img_inner_con"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container rent_with_conf_con" id="root">
+          <div class="section-2">
+            <h2>Rent with confidence</h2>
+            <progress max="100" value="0"></progress>
+            <div class="rght-section">
+              <div class="box">
+                <div
+                  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con1"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="300"
+                  data-aos-once="true"
+                >
+                  <div class="rent_with_conf_number_con">
+                    <p>1</p>
+                    <div class="sk-fading-circle">
+                      <div class="sk-circle1 sk-circle"></div>
+                      <div class="sk-circle2 sk-circle"></div>
+                      <div class="sk-circle3 sk-circle"></div>
+                      <div class="sk-circle4 sk-circle"></div>
+                      <div class="sk-circle5 sk-circle"></div>
+                      <div class="sk-circle6 sk-circle"></div>
+                      <div class="sk-circle7 sk-circle"></div>
+                      <div class="sk-circle8 sk-circle"></div>
+                      <div class="sk-circle9 sk-circle"></div>
+                      <div class="sk-circle10 sk-circle"></div>
+                      <div class="sk-circle11 sk-circle"></div>
+                      <div class="sk-circle12 sk-circle"></div>
+                    </div>
+                  </div>
+                  <h3>Hand-picked homes</h3>
+                  <h4>
+                    Only the best apartments, condos and neighborhood in the
+                    world.
+                  </h4>
+                  <a href="contact-us.html"
+                    >Learn more<img src="images/top-guests-arrow-up-icon.svg"
+                  /></a>
+                </div>
+                <div
+                  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con2"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="300"
+                  data-aos-once="true"
+                >
+                  <img src="images/rent-with-confidence-locat-img1.png" />
+                </div>
+              </div>
+              <div class="box">
+                <div
+                  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con1"
+                >
+                  <div class="rent_with_conf_number_con">
+                    <p>2</p>
+                    <div class="sk-fading-circle">
+                      <div class="sk-circle1 sk-circle"></div>
+                      <div class="sk-circle2 sk-circle"></div>
+                      <div class="sk-circle3 sk-circle"></div>
+                      <div class="sk-circle4 sk-circle"></div>
+                      <div class="sk-circle5 sk-circle"></div>
+                      <div class="sk-circle6 sk-circle"></div>
+                      <div class="sk-circle7 sk-circle"></div>
+                      <div class="sk-circle8 sk-circle"></div>
+                      <div class="sk-circle9 sk-circle"></div>
+                      <div class="sk-circle10 sk-circle"></div>
+                      <div class="sk-circle11 sk-circle"></div>
+                      <div class="sk-circle12 sk-circle"></div>
+                    </div>
+                  </div>
+                  <h3>Matching service</h3>
+                  <h4>
+                    From the short list, we will compare and recommend the best
+                    for you.
+                  </h4>
+                  <a href="contact-us.html"
+                    >Learn more<img src="images/top-guests-arrow-up-icon.svg"
+                  /></a>
+                </div>
+                <div
+                  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con2"
+                >
+                  <img src="images/rent-with-confidence-locat-img2.png" />
+                </div>
+              </div>
+              <div class="box">
+                <div
+                  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con1"
+                >
+                  <div class="rent_with_conf_number_con">
+                    <p>3</p>
+                    <div class="sk-fading-circle">
+                      <div class="sk-circle1 sk-circle"></div>
+                      <div class="sk-circle2 sk-circle"></div>
+                      <div class="sk-circle3 sk-circle"></div>
+                      <div class="sk-circle4 sk-circle"></div>
+                      <div class="sk-circle5 sk-circle"></div>
+                      <div class="sk-circle6 sk-circle"></div>
+                      <div class="sk-circle7 sk-circle"></div>
+                      <div class="sk-circle8 sk-circle"></div>
+                      <div class="sk-circle9 sk-circle"></div>
+                      <div class="sk-circle10 sk-circle"></div>
+                      <div class="sk-circle11 sk-circle"></div>
+                      <div class="sk-circle12 sk-circle"></div>
+                    </div>
+                  </div>
+                  <h3>In person meet</h3>
+                  <h4>We welcome and meet you in person upon arrival.</h4>
+                  <a href="contact-us.html"
+                    >Learn more<img src="images/top-guests-arrow-up-icon.svg"
+                  /></a>
+                </div>
+                <div
+                  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con2"
+                >
+                  <img src="images/rent-with-confidence-locat-img3.png" />
+                </div>
+              </div>
+              <div class="box">
+                <div
+                  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con1"
+                >
+                  <div class="rent_with_conf_number_con">
+                    <p>4</p>
+                    <div class="sk-fading-circle">
+                      <div class="sk-circle1 sk-circle"></div>
+                      <div class="sk-circle2 sk-circle"></div>
+                      <div class="sk-circle3 sk-circle"></div>
+                      <div class="sk-circle4 sk-circle"></div>
+                      <div class="sk-circle5 sk-circle"></div>
+                      <div class="sk-circle6 sk-circle"></div>
+                      <div class="sk-circle7 sk-circle"></div>
+                      <div class="sk-circle8 sk-circle"></div>
+                      <div class="sk-circle9 sk-circle"></div>
+                      <div class="sk-circle10 sk-circle"></div>
+                      <div class="sk-circle11 sk-circle"></div>
+                      <div class="sk-circle12 sk-circle"></div>
+                    </div>
+                  </div>
+                  <h3>24/7 support</h3>
+                  <h4>We ‘re always here to make you feel at home.</h4>
+                  <a href="contact-us.html"
+                    >Learn more<img src="images/top-guests-arrow-up-icon.svg"
+                  /></a>
+                </div>
+                <div
+                  class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con2"
+                >
+                  <img src="images/rent-with-confidence-locat-img4.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="timeless_experience_main_con">
+          <div
+            class="container timeless_experience_con"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="300"
+            data-aos-once="true"
+          >
+            <div class="timeless_experience_sub_con1">
+              <h2>#TimelessExperience</h2>
+            </div>
+            <div class="timeless_experience_sub_con2">
+              <h3>Follow on</h3>
+              <a href="#!">
+                <img src="images/timelessexperience-facebook-icon.svg" />
+              </a>
+              <a href="#!">
+                <img src="images/timelessexperience-twitter-icon.svg" />
+              </a>
+              <a href="#!">
+                <img src="images/timelessexperience-instagram-icon.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="hear_from_others_main_con">
+          <div class="hear_from_others_con">
+            <div class="container">
+              <h2
+                data-aos="fade-up"
+                data-aos-duration="1300"
+                data-aos-easing="ease"
+                data-aos-once="true"
+              >
+                Hear from others
+              </h2>
+            </div>
+            <div
+              class="hear_from_others_img"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+              data-aos-easing="ease"
+              data-aos-once="true"
+            ></div>
+          </div>
+          <div class="container hear_from_others_inner_con">
+            <div
+              class="col-lg-4 col-md-4 col-sm-4 col-xs-12 hear_from_others_sub_con1"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+              data-aos-easing="ease"
+              data-aos-once="true"
+            >
+              <h3>Maggie Gibson</h3>
+              <img src="images/hear-from-others-quote-icon.svg" />
+              <h4>
+                The unit was perfect! I needed a furnished apartment for a few
+                months and Timeless Experience thought of everything and even
+                more.
+              </h4>
+              <h5>Traveler</h5>
+              <h6>15 Dec, 2022</h6>
+            </div>
+            <div
+              class="col-lg-4 col-md-4 col-sm-4 col-xs-12 hear_from_others_sub_con2"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+              data-aos-easing="ease"
+              data-aos-once="true"
+            >
+              <h3>Lucy Rogers</h3>
+              <img src="images/hear-from-others-quote-icon.svg" />
+              <h4>
+                We had a phenomenal experience with Timeless Experience. Our
+                trip to London was last-minute. With only three days out from
+                check-in, they got us nice Condo. Great stuff!
+              </h4>
+              <h5>Business</h5>
+              <h6>10 Jan, 2023</h6>
+            </div>
+            <div
+              class="col-lg-4 col-md-4 col-sm-4 col-xs-12 hear_from_others_sub_con3"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+              data-aos-easing="ease"
+              data-aos-once="true"
+            >
+              <h3>Cordelia Andrews</h3>
+              <img src="images/hear-from-others-quote-icon.svg" />
+              <h4>
+                You gotta love these guys at TE, everything works really well. I
+                was able to earn more than I thought. I’ll recommend other house
+                owners to get onboard.
+              </h4>
+              <h5>Landlord</h5>
+              <h6>02 May, 2023</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container let_our_search_con text-center">
+          <h2>Let our search guide you</h2>
+          <div
+            class="col-lg-6 col-md-6 col-sm-6 col-xs-12 let_our_search_main_sub_con1"
+          >
+            <div class="top_guests_livi_redefin_img_con">
+              <div class="top_guests_livi_redefin_img_inner_con"></div>
+            </div>
+            <h3>Landlords</h3>
+            <a href="#!"
+              >Rent your property<img src="images/top-guests-arrow-up-icon.svg"
+            /></a>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-6 col-xs-12 let_our_search_main_sub_con2"
+          >
+            <div class="top_guests_livi_redefin_img_con">
+              <div class="top_guests_livi_redefin_img_inner_con"></div>
+            </div>
+            <h3>Business</h3>
+            <a href="business.html"
+              >Work from anywhere<img src="images/top-guests-arrow-up-icon.svg"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="join_time_exp_main_con text-center">
+          <h3>Join Timeless Experience</h3>
+          <h2>Be the first to hear about our latest deals, and newest homes</h2>
+          <form>
+            <input type="email" placeholder="Email address" required />
+            <a href="#!"><button type="submit">Subscribe</button></a>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="exp_the_time_diff_main_con top_guests_livi_redefin_img_con">
+          <div
+            class="exp_the_time_diff_hero_img_con top_guests_livi_redefin_img_inner_con"
+          ></div>
+          <div class="exp_the_time_diff_con container">
+            <h2>Experience the timeless difference</h2>
+            <h3>
+              Unforgettable stays, unbeatable returns – creating timeless
+              memories every time.
+            </h3>
+            <a href="contact-us.html"
+              ><button type="button">Learn more</button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container footer_main_con">
+          <div
+            class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer_main_sub_con1"
+          >
+            <a href="#!"
+              ><img src="images/footer-logo.svg" class="footer_logo"
+            /></a>
+            <br />
+            <div class="footer_social_sub_list_con">
+              <h6>
+                Catering to travelers and businesses with corporate needs, we
+                forge lucrative partnerships for property owners, maximizing ROI
+                while offering investors world-class insights
+                <a href="contact-us.html">Learn more</a>
+              </h6>
+              <ul class="footer_social">
+                <ol>
+                  <li id="fb_icon">
+                    <a href="#!" target="_blank"
+                      ><i class="footer_facebook_icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#!" target="_blank"
+                      ><i class="footer_twitter_icon"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#!" target="_blank"
+                      ><i class="footer_instagram_icon"></i
+                    ></a>
+                  </li>
+                </ol>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer_main_sub_con2"
+          >
+            <div class="footer_sub_con1 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <h4>COMPANY</h4>
+              <ul>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="investors.html">Investors</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer_sub_con2 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <h4>STAY</h4>
+              <ul>
+                <li><a href="landlord.html">Landlords</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="travelers.html">Travelers</a></li>
+              </ul>
+            </div>
+            <div class="footer_sub_con3 col-lg-4 col-md-4 col-sm-4 col-xs-6">
+              <h4>MORE</h4>
+              <ul>
+                <li><a href="contact-us.html">Contact us</a></li>
+                <li><a href="referral.html">Referral</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_copyright_con text-right">
+            <h5>© 2023 All Rights Reserved</h5>
+            <h6><a href="#!">Terms of Service</a></h6>
+            <h6><a href="#!">Privacy Policy</a></h6>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-v3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.3.4/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.3.4/dist/ScrollTrigger.js"></script>
+
+    <script src="js/aos.js"></script>
+
+    <script>
+      /*FORCE PAGE TO START FROM TOP ON WHEN PAGE IS REFRESHED*/
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+
+    <script type="text/javascript">
+      /*MENU NAVBAR HAMBURGER OPEN-CLOSE*/
+
+      $(document).ready(function () {
+        $("#main_menubar_nav-icon").click(function () {
+          $(this).toggleClass("open");
+          $(".main_menubar_overlay").toggleClass("open");
+          $(".main_menubar_overlay a").toggleClass("open");
+          $(".main_menubar_overlay p").toggleClass("open");
+        });
+      });
+    </script>
+
+    <script>
+      /*LANDING PAGE BODY SLIDE*/
+
+      $(function () {
+        $("a[href*=#]").on(
+          "click",
+          function (e) {
+            e.preventDefault();
+            $("html, body").animate($(this).attr("href")).offset().top;
+          },
+          600,
+          "linear"
+        );
+      });
+    </script>
+
+    <script>
+      /*TOP GUESTS AND TRAVELERS MAIN IMAGE SLIDE-UP-DOWN ON SCROLL*/
+
+      $(document).ready(function () {
+        //parallax scroll
+        $(window).on("load scroll", function () {
+          var parallaxElement = $(".top_guests_livi_redefin_img_inner_con"),
+            parallaxQuantity = parallaxElement.length;
+          window.requestAnimationFrame(function () {
+            for (var i = 0; i < parallaxQuantity; i++) {
+              var currentElement = parallaxElement.eq(i),
+                windowTop = $(window).scrollTop(),
+                elementTop = currentElement.offset().top,
+                elementHeight = currentElement.height(),
+                viewPortHeight =
+                  window.innerHeight * 0.01 - elementHeight * 0.01,
+                scrolled = windowTop - elementTop + viewPortHeight;
+              currentElement.css({
+                transform: "translate3d(0," + scrolled * 0.1 + "px, 0)",
+              });
+            }
+          });
+        });
+      });
+    </script>
+
+    <script>
+      /*TOP GUESTS AND TRAVELERS - LOGOS INFINITI SLIDE*/
+
+      $(".gallery").slick({
+        slidesToShow: 4,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 3000,
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        pauseOnHover: false,
+        cssEase: "linear",
+
+        infinite: true,
+        variableWidth: true,
+        centerMode: true,
+      });
+    </script>
+
+    <script>
+      /*RENT WITH CONFIDENCE - PAUSE & FADE CONTENT ON SCROLL*/
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      let section = document.getElementsByClassName("section-2");
+      const boxes = document.querySelectorAll(".box");
+
+      const tl = gsap.timeline();
+      boxes.forEach((box, i) => {
+        if (i !== 0) {
+          tl.fromTo(
+            box,
+            {
+              translate: 0,
+              opacity: 0,
+              yPercent: 0.5,
+            },
+            {
+              
+              opacity: 1,
+              yPercent: 0,
+            },
+            i
+          );
+        }
+        if (i !== boxes.length - 1) {
+          tl.fromTo(
+            box,
+            {
+              opacity: 1,
+              yPercent: 0,
+            },
+            {
+              opacity: 0,
+              yPercent: -0.5,
+              delay: 1,
+            },
+            i
+          );
+        }
+      });
+      ScrollTrigger.create({
+        trigger: section,
+        pin: true,
+        start: "center center",
+        end: `+=${window.innerHeight * boxes.length}`,
+        animation: tl,
+        scrub: true,
+      });
+    </script>
+
+    <script>
+      /*RENT WITH CONFIDENCE - PROGRESS LOADER*/
+
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to("progress", {
+        value: 145,
+        ease: "none",
+        scrollTrigger: {
+          trigger: "#mySection",
+          scrub: 1,
+        },
+      });
+    </script>
+
+    <script>
+      /*TOP GUESTS AND TRAVELERS - LOGOS INFINITI SLIDE*/
+
+      $(".hear_from_others_inner_con").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 0,
+        speed: 300,
+        autoplaySpeed: 3000,
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        pauseOnHover: false,
+        cssEase: "ease",
+
+        draggable: false,
+        infinite: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              autoplay: true,
+            },
+          },
+        ],
+      });
+    </script>
+
+    <script>
+      /*AOS ANIMATIONS ON PAGE SCROLL*/
+
+      (function () {
+        var addElements = function () {
+          var txt = document.createTextNode("I am lazy and late to the party.");
+          var el;
+          el = document.createElement("div");
+          el.appendChild(txt);
+          document.body.appendChild(el);
+          // If we want newly injected elements to be watched, refresh ScrollWatch. It will re-query the dom and start watching new elements.
+          swInstance.refresh();
+        };
+        var swInstance = new ScrollWatch({
+          watch: "div",
+          infiniteScroll: true,
+          infiniteOffset: 200,
+          onInfiniteYInView: addElements,
+        });
+      })();
+    </script>
+
+    <script>
+      AOS.init({
+        offset: -10,
+        easing: "linear",
+        mirror: true, // whether elements should animate out while scrolling past them
+      });
+    </script>
+  </body>
+</html>
