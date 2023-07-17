@@ -880,6 +880,9 @@ video.fullscreen {
   .hero_img .hero_img_inner {
     text-align: center;
   }
+  .hero_img_inner a{
+    margin: 0 auto;
+  }
 }
 
 /*===================END OF HERO SECTION===================*/
