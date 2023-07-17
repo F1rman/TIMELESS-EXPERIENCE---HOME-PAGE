@@ -119,15 +119,15 @@ textarea {
   box-shadow: 0 1px 1px 0 rgba(31, 32, 24, 0.1);
 }
 .main_menubar_con #logo {
-  animation: 1.5s fadeInNavLogo ease-out;
-  /* animation: 1s fadeInNavMenu ease-out; */
+  animation: 1.5s fadeInNavLogo ease;
+  /* animation: 1s fadeInNavMenu ease; */
 }
 .main_menubar_con .main_menubar_list_items,
 .main_menubar_con .main_menubar_hamburger {
-  animation: 1.5s fadeInNavMenu ease-out;
+  animation: 1.5s fadeInNavMenu ease;
 }
 
-@keyframes fadefindHome {
+/* @keyframes fadefindHome {
   0% {
     opacity: 0;
     transform: translateY(-40px) translateZ(0);
@@ -136,11 +136,11 @@ textarea {
     opacity: 1;
     transform: translateY(-40px) translateZ(0);
   }
-}
+} */
 @keyframes fadeInNavLogo {
   0% {
     opacity: 0;
-    translate: 0 -105px;
+    translate: 0 -150px;
   }
   100% {
     opacity: 1;
@@ -819,6 +819,9 @@ video.fullscreen {
   z-index: 2;
 }
 @media (max-width: 499px) {
+  .gallery_overlay{
+
+  }
   .hero_img .hero_img_inner h2 {
     font-size: 40px;
   }
