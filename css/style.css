@@ -119,7 +119,8 @@ textarea {
   box-shadow: 0 1px 1px 0 rgba(31, 32, 24, 0.1);
 }
 .main_menubar_con #logo {
-  animation: 1s fadeInNavLogo ease-out;
+  animation: 1.5s fadeInNavLogo ease-out;
+  /* animation: 1s fadeInNavMenu ease-out; */
 }
 .main_menubar_con .main_menubar_list_items,
 .main_menubar_con .main_menubar_hamburger {
