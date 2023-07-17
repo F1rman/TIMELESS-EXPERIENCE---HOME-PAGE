@@ -136,7 +136,12 @@ textarea {
   transform: translate3d(0, -25px, 0);
 
 } */
-
+.home_simplified_con [data-aos="fade-down"] {
+  transform: translate3d(0, -55px, 0);
+}
+.home_simplified_con [data-aos="zoom-in"] {
+  transform: translate3d(0, -55px, 0);
+}
 @keyframes fadeInNavLogo {
   0% {
     opacity: 0;
