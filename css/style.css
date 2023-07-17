@@ -773,7 +773,7 @@ video.fullscreen {
 }
 .gallery_overlay {
   position: absolute;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   z-index: 2;
   height: 100%;
@@ -1193,7 +1193,7 @@ video.fullscreen {
 }
 
 .we_combined_the_main_con .gallery {
-  width: 60%;
+  width: 100%;
   overflow: hidden;
   margin: 0 auto 0 auto;
 }
