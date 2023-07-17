@@ -119,15 +119,14 @@ textarea {
   box-shadow: 0 1px 1px 0 rgba(31, 32, 24, 0.1);
 }
 .main_menubar_con #logo {
-  animation: 1s fadeInNavLogo ease;
+  animation: 1s fadeInNavLogo ease-out;
 }
 .main_menubar_con .main_menubar_list_items,
 .main_menubar_con .main_menubar_hamburger {
-  animation: 1.5s fadeInNavMenu ease;
+  animation: 1.5s fadeInNavMenu ease-out;
 }
 
-.hero_img_inner.container {
-}
+
 @keyframes fadefindHome {
   0% {
     opacity: 0;
@@ -523,7 +522,7 @@ textarea {
 
 .main_menubar_overlay p.open {
   opacity: 1;
-  animation: 1.7s fadeInCopyright ease;
+  animation: 1.7s fadeInCopyright ease-out;
 }
 
 @keyframes fadeInCopyright {
@@ -541,7 +540,7 @@ textarea {
 
 .main_menubar_overlay a.open:nth-child(1) {
   opacity: 1;
-  animation: 1s fadeInLinks1 ease;
+  animation: 1s fadeInLinks1 ease-out;
 }
 
 @keyframes fadeInLinks1 {
@@ -559,7 +558,7 @@ textarea {
 
 .main_menubar_overlay a.open:nth-child(2) {
   opacity: 1;
-  animation: 1.25s fadeInLinks2 ease;
+  animation: 1.25s fadeInLinks2 ease-out;
 }
 
 @keyframes fadeInLinks2 {
@@ -577,7 +576,7 @@ textarea {
 
 .main_menubar_overlay a.open:nth-child(3) {
   opacity: 1;
-  animation: 1.5s fadeInLinks3 ease;
+  animation: 1.5s fadeInLinks3 ease-out;
 }
 
 @keyframes fadeInLinks3 {
@@ -595,7 +594,7 @@ textarea {
 
 .main_menubar_overlay a.open:nth-child(4) {
   opacity: 1;
-  animation: 1.9s fadeInLinks3 ease;
+  animation: 1.9s fadeInLinks3 ease-out;
 }
 
 @keyframes fadeInLinks3 {
@@ -613,15 +612,15 @@ textarea {
 
 @media (max-width: 767px) {
   .main_menubar_overlay .second_nav_section-xs a.open:nth-of-type(1) {
-    animation: 2.2s fadeInLinks5 ease;
+    animation: 2.2s fadeInLinks5 ease-out;
   }
 
   .main_menubar_overlay .second_nav_section-xs a.open:nth-of-type(2) {
-    animation: 2.45s fadeInLinks6 ease;
+    animation: 2.45s fadeInLinks6 ease-out;
   }
 
   .main_menubar_overlay .second_nav_section-xs a.open:nth-of-type(3) {
-    animation: 2.75s fadeInLinks7 ease;
+    animation: 2.75s fadeInLinks7 ease-out;
   }
 }
 
@@ -777,7 +776,7 @@ video.fullscreen {
 .hero_img .hero_img_inner {
   position: relative;
   top: 35%;
-  animation: 1.0s fadeInCopyright ease;
+  /* animation: 1.0s fadeInCopyright ease; */
   padding: 0;
   z-index: 2;
 
