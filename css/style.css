@@ -126,7 +126,9 @@ textarea {
 .main_menubar_con .main_menubar_hamburger {
   animation: 1.5s fadeInNavMenu ease;
 }
-
+.hero_img_inner [data-aos="fade-down"] {
+  transform: translate3d(0, -50px, 0);
+}
 /* @keyframes fadefindHome {
   0% {
     opacity: 0;
@@ -819,8 +821,7 @@ video.fullscreen {
   z-index: 2;
 }
 @media (max-width: 499px) {
-  .gallery_overlay{
-
+  .gallery_overlay {
   }
   .hero_img .hero_img_inner h2 {
     font-size: 40px;
@@ -897,7 +898,7 @@ video.fullscreen {
     margin-bottom: 80px;
   }
 }
-.top_guests_main_con{
+.top_guests_main_con {
   position: relative;
 }
 .top_guests_main_con h2 {
