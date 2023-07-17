@@ -129,11 +129,13 @@ textarea {
 .hero_img_inner [data-aos="fade-down"] {
   transform: translate3d(0, -50px, 0);
 }
-
-.top_guests_livi_redefin_text_con [data-aos="fade-up"]{ 
+.top_guests_livi_redefin_img_con[data-aos=zoom-in-down] {
+  transform: translate3d(0,-50px,0) scale(.8);
+}
+/* .top_guests_livi_redefin_text_con [data-aos="fade-up"]{ 
   transform: translate3d(0, -25px, 0);
 
-}
+} */
 /* @keyframes fadefindHome {
   0% {
     opacity: 0;
