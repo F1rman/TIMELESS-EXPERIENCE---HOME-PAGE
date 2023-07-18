@@ -825,6 +825,7 @@ video.fullscreen {
 }
 @media (max-width: 499px) {
   .gallery_overlay {
+    background-image: linear-gradient( 225deg, #fff 12%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, #fff 88% );
   }
   .hero_img .hero_img_inner h2 {
     font-size: 40px;
