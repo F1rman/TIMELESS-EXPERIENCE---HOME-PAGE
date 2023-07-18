@@ -3511,3 +3511,10 @@ footer .footer_copyright_con h6 a:hover {
 /*===================END OF FOOTER SECTION===================*/
 
 /*===================END OF HOME PAGE===================*/
+
+
+.box .rent_with_conf_inner_con2:not(:first-child){
+  opacity: 0;
+}.box .rent_with_conf_inner_con1:not(:first-child){
+  opacity: 0;
+}

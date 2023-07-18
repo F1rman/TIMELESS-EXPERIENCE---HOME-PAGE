@@ -206,7 +206,7 @@
                   data-aos-easing="ease"
                   data-aos-once="true"
                 >
-                  Living, redefined 
+                  Living, redefined
                 </h3>
                 <h4
                   data-aos="fade-up"
@@ -236,7 +236,7 @@
               data-aos-easing="ease"
               data-aos-once="true"
               data-aos-delay="200"
-              >
+            >
               Home, simplified v2
             </h2>
             <h3
@@ -265,11 +265,10 @@
                 </div>
               </div>
               <div
-              data-aos="zoom-in-down"
-              data-aos-duration="600"
-              data-aos-easing="ease"
-              data-aos-once="true"
-              
+                data-aos="zoom-in-down"
+                data-aos-duration="600"
+                data-aos-easing="ease"
+                data-aos-once="true"
                 class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container rest_sanct_sub_con2 top_guests_livi_redefin_img_con"
               >
                 <div class="top_guests_livi_redefin_img_inner_con"></div>
@@ -279,9 +278,9 @@
               <div
                 class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container smart_comf_sub_con1 top_guests_livi_redefin_img_con"
                 data-aos="zoom-in-down"
-              data-aos-duration="600"
-              data-aos-easing="ease"
-              data-aos-once="true"
+                data-aos-duration="600"
+                data-aos-easing="ease"
+                data-aos-once="true"
               >
                 <div class="top_guests_livi_redefin_img_inner_con"></div>
               </div>
@@ -302,20 +301,20 @@
             </div>
             <div class="work_gour_main_con">
               <div
-              data-aos="zoom-in-down"
-              data-aos-duration="600"
-              data-aos-easing="ease"
-              data-aos-once="true"
+                data-aos="zoom-in-down"
+                data-aos-duration="600"
+                data-aos-easing="ease"
+                data-aos-once="true"
                 class="col-lg-6 col-md-6 col-sm-6 col-xs-12 container work_gour_sub_con1 top_guests_livi_redefin_img_con"
               >
                 <span><h2>Workspace solutions</h2></span>
                 <div class="top_guests_livi_redefin_img_inner_con"></div>
               </div>
               <div
-              data-aos="zoom-in-down"
-              data-aos-duration="600"
-              data-aos-easing="ease"
-              data-aos-once="true"
+                data-aos="zoom-in-down"
+                data-aos-duration="600"
+                data-aos-easing="ease"
+                data-aos-once="true"
                 class="col-lg-6 col-md-6 col-sm-6 col-xs-12 work_gour_sub_con2 top_guests_livi_redefin_img_con"
               >
                 <div class="top_guests_livi_redefin_img_inner_con"></div>
@@ -338,10 +337,10 @@
                 </div>
               </div>
               <div
-              data-aos="zoom-in-down"
-              data-aos-duration="600"
-              data-aos-easing="ease"
-              data-aos-once="true"
+                data-aos="zoom-in-down"
+                data-aos-duration="600"
+                data-aos-easing="ease"
+                data-aos-once="true"
                 class="col-lg-7 col-md-7 col-sm-6 col-xs-12 partner_we_are_sub_con2 top_guests_livi_redefin_img_con"
               >
                 <div class="top_guests_livi_redefin_img_inner_con"></div>
@@ -356,14 +355,10 @@
           <div class="section-2">
             <h2>Rent with confidence</h2>
             <progress max="100" value="0"></progress>
-            <div class="rght-section">
+            <div class="rght-section" style="display: flex; width: 100%">
               <div class="box">
                 <div
                   class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con1"
-                  data-aos="fade-up"
-                  data-aos-easing="linear"
-                  data-aos-duration="300"
-                  data-aos-once="true"
                 >
                   <div class="rent_with_conf_number_con">
                     <p>1</p>
@@ -382,7 +377,7 @@
                       <div class="sk-circle12 sk-circle"></div>
                     </div>
                   </div>
-                  <h3>Hand-picked homes</h3>
+                  <h3>Hand-picked homes v1</h3>
                   <h4>
                     Only the best apartments, condos and neighborhood in the
                     world.
@@ -393,10 +388,6 @@
                 </div>
                 <div
                   class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rent_with_conf_inner_con2"
-                  data-aos="fade-down"
-                  data-aos-easing="linear"
-                  data-aos-duration="300"
-                  data-aos-once="true"
                 >
                   <img src="images/rent-with-confidence-locat-img1.png" />
                 </div>
@@ -847,50 +838,64 @@
       gsap.registerPlugin(ScrollTrigger);
 
       let section = document.getElementsByClassName("section-2");
-      const boxes = document.querySelectorAll(".box");
+      const boxes = document.querySelectorAll(
+        ".box .rent_with_conf_inner_con1"
+      );
+      const boxes2 = document.querySelectorAll(
+        ".box .rent_with_conf_inner_con2"
+      );
+      // ScrollTrigger.create({
+      //   trigger: section,
+      //   pin: true,
+      //   start: "top top",
+      //   end: `+=${window.innerHeight * boxes2.length}`,
+      //   animation: tl,
+      //   scrub: true,
+      // });
+      console.log(boxes2.length);
+      const text = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          pin: true,
+          start: "top top",
+          scrub: 1,
+          end: `+=400%`,
+          defaults: { duration: 1, ease: "elastic" },
+          snap: {
+            snapTo: 0.3,
+            duration: 0.3,
+            delay: 0.1,
+            ease: "power1.inOut",
+          },
+        },
+      });
+      const img = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          scrub: 1,
+          end: `+=400%`,
+          defaults: { duration: 1, ease: "elastsc" },
+        },
+      });
 
-      const tl = gsap.timeline();
-      boxes.forEach((box, i) => {
-        if (i !== 0) {
-          tl.fromTo(
-            box,
-            {
-              translate: 0,
-              opacity: 0,
-              yPercent: 0.5,
-            },
-            {
-              translateY: 35,
-              opacity: 1,
-              yPercent: 0,
-            },
-            i
-          );
-        }
-        if (i !== boxes.length - 1) {
-          tl.fromTo(
-            box,
-            {
-              opacity: 1,
-              yPercent: 0,
-            },
-            {
-              opacity: 0,
-              yPercent: -0.5,
-              delay: 1,
-            },
-            i
-          );
-        }
-      });
-      ScrollTrigger.create({
-        trigger: section,
-        pin: true,
-        start: "center center",
-        end: `+=${window.innerHeight * boxes.length}`,
-        animation: tl,
-        scrub: true,
-      });
+      text
+        .fromTo(boxes[0], { y: 25, opacity: 1 }, { y: 0, opacity: 0 })
+        .fromTo(boxes[1], { y: -25, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes[1], { y: -25, opacity: 0 })
+        .fromTo(boxes[2], { y: 25, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes[2], { y: 25, opacity: 0 })
+        .fromTo(boxes[3], { y: -25, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes[3], { y: -25, opacity: 1 });
+
+      img
+        .fromTo(boxes2[0], { y: -25, opacity: 1 }, { y: 0, opacity: 0 })
+        .fromTo(boxes2[1], { y: 25, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes2[1], { y: 25, opacity: 0 })
+        .fromTo(boxes2[2], { y: -25, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes2[2], { y: 25, opacity: 0 })
+        .fromTo(boxes2[3], { y: -25, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes2[3], { y: 25, opacity: 1 });
     </script>
 
     <script>
@@ -898,11 +903,13 @@
 
       gsap.registerPlugin(ScrollTrigger);
       gsap.to("progress", {
-        value: 145,
+        value: 100,
         ease: "none",
         scrollTrigger: {
-          trigger: "#mySection",
+          start: "top top",
+          trigger: ".pin-spacer",
           scrub: 1,
+          end: "bottom bottom",
         },
       });
     </script>
