@@ -237,7 +237,7 @@
               data-aos-once="true"
               data-aos-delay="200"
             >
-              Home, simplified v2
+              Home, simplified v3
             </h2>
             <h3
               data-aos="fade-down"
@@ -860,11 +860,11 @@
           start: "top top",
           scrub: 1,
           end: `+=400%`,
-          defaults: { duration: 1, ease: "elastic" },
+          defaults: { duration: .3,  },
           snap: {
-            snapTo: 0.3,
-            duration: 0.3,
-            delay: 0.1,
+            snapTo: 0.25,
+            duration: 0.1,
+            delay: 0.05,
             ease: "power1.inOut",
           },
         },
@@ -875,27 +875,27 @@
           start: "top top",
           scrub: 1,
           end: `+=400%`,
-          defaults: { duration: 1, ease: "elastsc" },
+          defaults: { duration: .3,  },
         },
       });
 
       text
-        .fromTo(boxes[0], { y: 25, opacity: 1 }, { y: 0, opacity: 0 })
-        .fromTo(boxes[1], { y: -25, opacity: 0 }, { y: 0, opacity: 1 })
-        .to(boxes[1], { y: -25, opacity: 0 })
-        .fromTo(boxes[2], { y: 25, opacity: 0 }, { y: 0, opacity: 1 })
-        .to(boxes[2], { y: 25, opacity: 0 })
-        .fromTo(boxes[3], { y: -25, opacity: 0 }, { y: 0, opacity: 1 })
-        .to(boxes[3], { y: -25, opacity: 1 });
+        .fromTo(boxes[0], { y: 12.5, opacity: 1 }, { y: 0, opacity: 0 })
+        .fromTo(boxes[1], { y: -12.5, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes[1], { y: -12.5, opacity: 0 })
+        .fromTo(boxes[2], { y: 12.5, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes[2], { y: 12.5, opacity: 0 })
+        .fromTo(boxes[3], { y: -12.5, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes[3], { y: -12.5, opacity: 1 });
 
       img
-        .fromTo(boxes2[0], { y: -25, opacity: 1 }, { y: 0, opacity: 0 })
-        .fromTo(boxes2[1], { y: 25, opacity: 0 }, { y: 0, opacity: 1 })
-        .to(boxes2[1], { y: 25, opacity: 0 })
-        .fromTo(boxes2[2], { y: -25, opacity: 0 }, { y: 0, opacity: 1 })
-        .to(boxes2[2], { y: -25, opacity: 0 })
-        .fromTo(boxes2[3], { y: 25, opacity: 0 }, { y: 0, opacity: 1 })
-        .to(boxes2[3], { y: 25, opacity: 1 });
+        .fromTo(boxes2[0], { y: -12.5, opacity: 1 }, { y: 0, opacity: 0 })
+        .fromTo(boxes2[1], { y: 12.5, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes2[1], { y: 12.5, opacity: 0 })
+        .fromTo(boxes2[2], { y: -12.5, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes2[2], { y: -12.5, opacity: 0 })
+        .fromTo(boxes2[3], { y: 12.5, opacity: 0 }, { y: 0, opacity: 1 })
+        .to(boxes2[3], { y: 12.5, opacity: 1 });
     </script>
 
     <script>
