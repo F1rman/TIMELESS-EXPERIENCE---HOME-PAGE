@@ -2090,7 +2090,7 @@ progress::-webkit-progress-value {
 }
 @media (max-width: 399px) {
   .rent_with_conf_con h2 {
-    margin: 38px 0 0 0;
+    margin: 35px 0 0 0;
   }
 }
 @media (max-width: 389px) {
@@ -2399,6 +2399,7 @@ progress::-webkit-progress-value {
 @media (max-width: 767px) {
   .rent_with_conf_con .rent_with_conf_inner_con2 {
     margin-top: 80px;
+    height: 400px;
   }
 }
 
@@ -2442,7 +2443,7 @@ progress::-webkit-progress-value {
   width: 100%;
   height: 100%;
   padding: 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /*===================END OF TOP HOME, SIMPLIFIED SECTION===================*/
